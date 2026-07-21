@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+body { background-color: #FFFFFF; color: #111111; }
+a { text-decoration: none; color: inherit; }
+
+/* Header & Footer */
+.header, .footer { background-color: #000000; color: #FFFFFF; padding: 0 48px; display: flex; justify-content: space-between; align-items: center; }
+.header { height: 80px; }
+.footer { padding: 64px 48px; align-items: flex-start; }
+.logo { font-weight: 900; font-size: 32px; }
+.nav-links { display: flex; gap: 48px; font-weight: 700; font-size: 12px; }
+.nav-icons { display: flex; gap: 24px; font-size: 20px; }
+.footer-col { display: flex; flex-direction: column; gap: 16px; font-weight: 700; font-size: 11px; }
+
+/* Utilities */
+.promo-banner { background-color: #F5F5F5; text-align: center; padding: 16px; font-size: 11px; font-weight: 500; }
+.main-container { padding: 80px 140px 160px 140px; display: flex; gap: 80px; justify-content: center; }
+.btn-dark { background-color: #111111; color: white; border: none; border-radius: 30px; padding: 18px 0; font-weight: 500; font-size: 15px; cursor: pointer; width: 100%; }
+.text-gray { color: #707072; }
+
+/* Product Page */
+.product-block { display: flex; background-color: #F5F5F5; padding: 32px 32px 32px 0; border-radius: 8px; width: 680px; gap: 24px; }
+.product-image { background-color: #EAEAEA; border-radius: 4px; width: 200px; height: 200px; }
+.product-info { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.qty-box { display: flex; align-items: center; gap: 12px; border: 1px solid #D4D4D4; padding: 6px 16px; border-radius: 24px; background: white; }
+.icon-box { border: 1px solid #D4D4D4; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: white; }
+
+/* Cart Page */
+.cart-items { flex: 1; display: flex; flex-direction: column; background-color: #F5F5F5; padding: 32px; border-radius: 8px; gap: 32px; }
+.cart-item { display: flex; gap: 24px; border-bottom: 1px solid #E5E5E5; padding-bottom: 32px; }
+.cart-item:last-child { border-bottom: none; padding-bottom: 0; }
+.cart-item-img { width: 160px; height: 160px; background-color: #EAEAEA; border-radius: 4px; }
+.summary-box { width: 360px; display: flex; flex-direction: column; gap: 24px; }
+.summary-row { display: flex; justify-content: space-between; font-size: 15px; }
+
+/* Support Page */
+.support-container { padding: 80px 140px; text-align: center; }
+.support-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+.support-card { border: 1px solid #E5E5E5; padding: 48px 24px; text-align: center; cursor: pointer; border-radius: 8px;}
+/* --- GIAO DIỆN TRANG CHI TIẾT CHUẨN FIGMA --- */
+.detail-container { display: flex; padding: 48px 140px; gap: 80px; justify-content: center; }
+.detail-image { flex: 1; background-color: #F5F5F5; border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 40px; }
+.detail-image img { width: 100%; max-width: 500px; object-fit: contain; }
+.detail-info { width: 400px; display: flex; flex-direction: column; }
+.detail-title { font-size: 28px; font-weight: 500; margin-bottom: 4px; }
+.detail-subtitle { font-size: 16px; color: #707072; margin-bottom: 24px; }
+.detail-price { font-size: 20px; font-weight: 500; margin-bottom: 40px; }
+
+.size-header { display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 16px; font-weight: 500; }
+.size-guide { color: #707072; cursor: pointer; }
+.size-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 32px; }
+.size-btn { padding: 12px 0; border: 1px solid #E5E5E5; background: white; border-radius: 4px; font-size: 16px; cursor: pointer; text-align: center; }
+.size-btn:hover { border-color: #111; }
+
+.btn-outline { background-color: white; color: #111; border: 1px solid #CCCCCC; border-radius: 30px; padding: 18px 0; font-weight: 500; font-size: 15px; cursor: pointer; width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px;}
+.btn-outline:hover { border-color: #111; }
